@@ -1,0 +1,15 @@
+  method GET_CONNECTION.
+
+    DATA wa TYPE LINE OF ZCL_4102_SINGLETON=>TY_CONNECTION_LIST.
+    READ TABLE ZCL_4102_SINGLETON=>CONNECTION_LIST
+    WITH TABLE KEY carrid = im_carrid connid = im_connid
+    INTO wa.
+
+IF sy-subrc = 4.
+RAISE EXCEPTION TYPE ZCX_4102_EXCEPTION
+EXPORTING carrid = im_carrid connid = im_connid textid = ZCX_4102_EXCEPTION=>NO_CONNECTION.
+ENDIF.
+
+    re_connection = wa.
+
+  endmethod.

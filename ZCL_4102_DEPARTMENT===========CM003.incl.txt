@@ -1,0 +1,23 @@
+  method GET_AVG_PERCENTAGE.
+
+        DATA:
+              r_employee TYPE REF TO ZCL_4102_EMPLOYEE,
+              r_staff TYPE REF TO ZCL_4102_FIELD_STAFF,
+              staffemployee TYPE i,
+              sum_percentage TYPE i.
+          LOOP AT it_employees INTO r_employee.
+
+                   TRY.
+                      r_staff  ?= r_employee.
+                      sum_percentage = sum_percentage +  r_staff->get_percentage( ).
+                      staffemployee = staffemployee + 1.
+                       re_avg_percentage   =    sum_percentage  /   staffemployee.
+                   CATCH cx_sy_move_cast_error.
+                   ENDTRY.
+          ENDLOOP.
+    SKIP 1.
+    WRITE: / 'The number of staff employees is:', staffemployee.
+    SKIP 1.
+    WRITE: / 'The Average percentage of the department Field Staff:',  re_avg_percentage.
+
+  endmethod.

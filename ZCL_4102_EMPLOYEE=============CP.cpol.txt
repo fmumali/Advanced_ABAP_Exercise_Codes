@@ -1,0 +1,25 @@
+class-pool .
+*"* class pool for class ZCL_4102_EMPLOYEE
+
+*"* local type definitions
+include ZCL_4102_EMPLOYEE=============ccdef.
+
+*"* class ZCL_4102_EMPLOYEE definition
+*"* public declarations
+  include ZCL_4102_EMPLOYEE=============cu.
+*"* protected declarations
+  include ZCL_4102_EMPLOYEE=============co.
+*"* private declarations
+  include ZCL_4102_EMPLOYEE=============ci.
+endclass. "ZCL_4102_EMPLOYEE definition
+
+*"* macro definitions
+include ZCL_4102_EMPLOYEE=============ccmac.
+*"* local class implementation
+include ZCL_4102_EMPLOYEE=============ccimp.
+
+class ZCL_4102_EMPLOYEE implementation.
+*"* method's implementations
+  include methods.
+endclass. "ZCL_4102_EMPLOYEE implementation
+

@@ -1,0 +1,10 @@
+  method PRINT.
+
+    WRITE: / 'Employees of the department:', departname.
+    SKIP 1.
+     DATA  r_employee TYPE REF TO ZCL_4102_EMPLOYEE.
+         LOOP AT it_employees INTO r_employee.
+           r_employee->print( ).
+          ENDLOOP.
+
+  endmethod.

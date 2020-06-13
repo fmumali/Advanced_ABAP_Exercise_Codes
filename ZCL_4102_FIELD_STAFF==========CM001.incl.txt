@@ -1,0 +1,10 @@
+  method CONSTRUCTOR.
+
+          CALL METHOD  super->constructor( im_name = im_name
+                                           im_base_salary = im_base_salary
+                                           im_dob =  im_dob
+                                           im_address = im_address ).
+                       percentage = im_percentage.
+                       sales = im_sales.
+
+  endmethod.

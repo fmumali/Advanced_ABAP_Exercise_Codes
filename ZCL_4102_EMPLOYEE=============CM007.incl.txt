@@ -1,0 +1,3 @@
+  method SET_BASE_SALARY.
+    base_salary = im_base_salary.
+  endmethod.

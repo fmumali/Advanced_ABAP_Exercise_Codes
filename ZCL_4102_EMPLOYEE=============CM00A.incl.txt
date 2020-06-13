@@ -1,0 +1,9 @@
+  method CONSTRUCTOR.
+
+    CALL METHOD SUPER->CONSTRUCTOR
+  EXPORTING
+ im_name = im_name
+ im_dob = im_dob
+ im_address = im_address.
+
+  endmethod.

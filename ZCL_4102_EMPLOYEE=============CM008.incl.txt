@@ -1,0 +1,3 @@
+  method GET_BASE_SALARY.
+    re_base_salary = base_salary.
+  endmethod.

@@ -1,0 +1,5 @@
+  method GET_AVG_SALARY.
+
+           re_avg_salary = avg_salary.
+
+  endmethod.

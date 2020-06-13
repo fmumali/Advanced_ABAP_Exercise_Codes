@@ -1,0 +1,5 @@
+private section.
+
+  data BASE_SALARY type INT4 .
+  data AGE type INT1 .
+  data SALARY type INT4 .

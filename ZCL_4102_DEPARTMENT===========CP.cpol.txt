@@ -1,0 +1,25 @@
+class-pool .
+*"* class pool for class ZCL_4102_DEPARTMENT
+
+*"* local type definitions
+include ZCL_4102_DEPARTMENT===========ccdef.
+
+*"* class ZCL_4102_DEPARTMENT definition
+*"* public declarations
+  include ZCL_4102_DEPARTMENT===========cu.
+*"* protected declarations
+  include ZCL_4102_DEPARTMENT===========co.
+*"* private declarations
+  include ZCL_4102_DEPARTMENT===========ci.
+endclass. "ZCL_4102_DEPARTMENT definition
+
+*"* macro definitions
+include ZCL_4102_DEPARTMENT===========ccmac.
+*"* local class implementation
+include ZCL_4102_DEPARTMENT===========ccimp.
+
+class ZCL_4102_DEPARTMENT implementation.
+*"* method's implementations
+  include methods.
+endclass. "ZCL_4102_DEPARTMENT implementation
+

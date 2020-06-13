@@ -1,0 +1,17 @@
+  method PRINT.
+
+DATA:
+   name TYPE string,
+   salary TYPE i,
+   address TYPE string,
+   dob TYPE datum,
+   age type i.
+   dob = me->get_dob( ).
+   age = sy-datum(4) -  dob(4).
+   address = me->get_address( ).
+
+    name = me->get_name( ).
+    salary = me->get_salary( ).
+
+    WRITE: /'Name:', name, 25  'Address:', address, 58 'Salary:', salary, 80 'Age:', age.
+  endmethod.

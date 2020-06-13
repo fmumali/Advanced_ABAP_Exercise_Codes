@@ -1,0 +1,6 @@
+  method GET_SALARY.
+
+           re_salary = me->get_base_salary( ) +  sales *  ( percentage / 100 ) .
+           re_salary = re_salary.
+
+  endmethod.

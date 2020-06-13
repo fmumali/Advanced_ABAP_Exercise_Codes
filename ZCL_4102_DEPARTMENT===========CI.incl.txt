@@ -1,0 +1,8 @@
+private section.
+
+  data DEPARTNAME type STRING .
+  data AVG_SALARY type I .
+  data AVG_PERCENTAGE type I .
+  data:
+    it_employees  TYPE TABLE OF REF TO ZCL_4102_EMPLOYEE .
+  data R_STAFF type ref to ZCL_4102_FIELD_STAFF .

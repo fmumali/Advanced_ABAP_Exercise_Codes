@@ -1,0 +1,14 @@
+  method GET_N_O_CONNECTIONS.
+
+  DATA:  wa LIKE LINE OF ZCL_4102_SINGLETON=>CONNECTION_LIST,
+         n_o_connections TYPE i VALUE 0.
+
+    LOOP AT ZCL_4102_SINGLETON=>CONNECTION_LIST INTO wa.
+       IF wa-carrid = im_carrid.
+       n_o_connections = n_o_connections + 1.
+       ENDIF.
+    ENDLOOP.
+
+   re_n_o_connections =  n_o_connections.
+
+  endmethod.

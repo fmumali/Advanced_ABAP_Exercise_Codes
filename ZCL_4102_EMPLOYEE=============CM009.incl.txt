@@ -1,0 +1,19 @@
+  method GET_SALARY.
+
+DATA:
+dob type d,
+base_salary TYPE i.
+  base_salary = get_base_salary( ).
+  dob = me->get_dob( ).
+
+            age = sy-datum(4) - dob(4).
+                  IF age > 40 AND age < 50.
+                        salary = base_salary + ( '0.05' * base_salary ).
+                  ELSEIF age > 50.
+                        salary = base_salary + ( '0.10' * base_salary ).
+                  ELSE.
+                        salary = base_salary.
+                  ENDIF.
+                        re_salary = salary.
+
+  endmethod.

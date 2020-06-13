@@ -1,0 +1,5 @@
+  method GET_SALES.
+
+          re_sales = sales.
+
+  endmethod.

@@ -1,0 +1,25 @@
+class ZCL_4102_DEPARTMENT definition
+  public
+  create public .
+
+public section.
+
+  methods CONSTRUCTOR
+    importing
+      !IM_DEPARTNAME type STRING .
+  methods SET_DEPARTNAME
+    importing
+      !IM_DEPARTNAME type STRING .
+  methods ADD_EMPLOYEE
+    importing
+      !R_EMPLOYEE type ref to ZCL_4102_EMPLOYEE .
+  methods GET_DEPARTNAME
+    returning
+      value(RE_DEPARTNAME) type STRING .
+  methods GET_AVG_SALARY
+    returning
+      value(RE_AVG_SALARY) type I .
+  methods GET_AVG_PERCENTAGE
+    returning
+      value(RE_AVG_PERCENTAGE) type I .
+  methods PRINT .

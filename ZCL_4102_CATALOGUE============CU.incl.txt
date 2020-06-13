@@ -1,0 +1,12 @@
+class ZCL_4102_CATALOGUE definition
+  public
+  final
+  create public
+  shared memory enabled .
+
+public section.
+
+  types:
+    TY_CONNECTION_LIST TYPE TABLE OF SPFLI WITH KEY CARRID CONNID .
+
+  data CONNECTIONS type TY_CONNECTION_LIST .

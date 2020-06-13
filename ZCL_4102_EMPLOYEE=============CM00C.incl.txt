@@ -1,0 +1,5 @@
+  method ZIF_4102_PRINTABLE~PRINT_OBJECT.
+
+    me->print( ).
+
+  endmethod.

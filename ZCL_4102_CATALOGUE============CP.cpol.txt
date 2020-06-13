@@ -1,0 +1,25 @@
+class-pool .
+*"* class pool for class ZCL_4102_CATALOGUE
+
+*"* local type definitions
+include ZCL_4102_CATALOGUE============ccdef.
+
+*"* class ZCL_4102_CATALOGUE definition
+*"* public declarations
+  include ZCL_4102_CATALOGUE============cu.
+*"* protected declarations
+  include ZCL_4102_CATALOGUE============co.
+*"* private declarations
+  include ZCL_4102_CATALOGUE============ci.
+endclass. "ZCL_4102_CATALOGUE definition
+
+*"* macro definitions
+include ZCL_4102_CATALOGUE============ccmac.
+*"* local class implementation
+include ZCL_4102_CATALOGUE============ccimp.
+
+class ZCL_4102_CATALOGUE implementation.
+*"* method's implementations
+  include methods.
+endclass. "ZCL_4102_CATALOGUE implementation
+

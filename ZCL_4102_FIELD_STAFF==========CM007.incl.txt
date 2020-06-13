@@ -1,0 +1,6 @@
+  method PRINT.
+
+            super->print( ).
+            WRITE:  90  'Percentage:', percentage, 120  'Sales:', sales.
+
+  endmethod.

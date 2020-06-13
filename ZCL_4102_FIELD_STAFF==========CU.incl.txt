@@ -1,0 +1,36 @@
+class ZCL_4102_FIELD_STAFF definition
+  public
+  inheriting from ZCL_4102_EMPLOYEE
+  create public .
+
+public section.
+
+  data SALES type I .
+  data:
+    percentage TYPE p DECIMALS 2 .
+
+  methods CONSTRUCTOR
+    importing
+      !IM_NAME type STRING
+      !IM_BASE_SALARY type INT4
+      !IM_DOB type DATUM
+      !IM_PERCENTAGE type P
+      !IM_SALES type INT4
+      !IM_ADDRESS type STRING .
+  methods SET_SALES
+    importing
+      !IM_SALES type I .
+  methods SET_PERCENTAGE
+    importing
+      !IM_PERCENTAGE type P .
+  methods GET_SALES
+    returning
+      value(RE_SALES) type I .
+  methods GET_PERCENTAGE
+    returning
+      value(RE_PERCENTAGE) type I .
+
+  methods GET_SALARY
+    redefinition .
+  methods PRINT
+    redefinition .

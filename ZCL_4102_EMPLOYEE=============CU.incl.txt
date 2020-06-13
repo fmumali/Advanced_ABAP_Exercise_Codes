@@ -1,0 +1,25 @@
+class ZCL_4102_EMPLOYEE definition
+  public
+  inheriting from ZCL_4102_PERSON
+  create public .
+
+public section.
+
+  interfaces ZIF_4102_PRINTABLE .
+
+  methods CONSTRUCTOR
+    importing
+      !IM_NAME type STRING
+      !IM_DOB type DATUM
+      !IM_ADDRESS type STRING
+      !IM_BASE_SALARY type INT4 .
+  methods SET_BASE_SALARY
+    importing
+      !IM_BASE_SALARY type INT4 .
+  methods GET_BASE_SALARY
+    returning
+      value(RE_BASE_SALARY) type INT4 .
+  methods GET_SALARY
+    returning
+      value(RE_SALARY) type INT4 .
+  methods PRINT .

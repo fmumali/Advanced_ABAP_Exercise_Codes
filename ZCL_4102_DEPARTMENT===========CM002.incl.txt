@@ -1,0 +1,5 @@
+  method CONSTRUCTOR.
+
+           departname = im_departname.
+
+  endmethod.
